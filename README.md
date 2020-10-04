@@ -1,4 +1,6 @@
-# Reproduce
+# Zero-Shot Rationalization by Multi-Task Transfer Learning from Question Answering
+**EMNLP 2020 Findings**
+## To Reproduce
 **We provide the reproduce code for proposed SBM model**
 Before reproducing, make sure the below python packages installed
 ```
