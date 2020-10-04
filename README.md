@@ -14,20 +14,20 @@ transformers
 ## How to train
 To trained our proposed model, follow the step below
 
-1. Download the **software.zip** and **data.zip** we upload
-2. unzip the tow zipfile above, and **put data/ under software/** directory
-3. cd in **software/**
-4. Download **train-v2.0.json and dev-v2.0.json** from SQuAD2.0 webpage and put them into **data/**
-5. preprocessing all data, run
+1. Clone the repositorry with git lfs
+    `git lfs clone`
+2. cd in **Zero-Shot-Rationalization-By-QA/**
+3. Download **train-v2.0.json and dev-v2.0.json** from SQuAD2.0 webpage and put them into **data/**
+4. preprocessing all data, run
     `./make_data.sh`
-6. To train the model, run
+5. To train the model, run
     `./_run_train.sh`
     You can chage the using GPU and other hyperparameters in this shell script
-7. The best model(with lowest valid loss) will happen in the second or third epochs, check the output when training to select the best model
-8. The model will be store in **software/model_merge3/** and in that directory, model_0.pickle is the first epoch model, model_1.pickle is the second, and so on.
+6. The best model(with lowest valid loss) will happen in the second or third epochs, check the output when training to select the best model
+7. The model will be store in **Zero-Shot-Rationalization-By-QA/model_merge3/** and in that directory, model_0.pickle is the first epoch model, model_1.pickle is the second, and so on.
 
 ## How to extract rationales
-After training is dene, the model will be saved in **software/model_merge3/** , pick the best model from output valid loss and change the **--predict_model** in **_run_beer_reason.sh** and **_run_movie_reason.sh**
+After training is dene, the model will be saved in **Zero-Shot-Rationalization-By-QA/model_merge3/** , pick the best model from output valid loss and change the **--predict_model** in **_run_beer_reason.sh** and **_run_movie_reason.sh**
 
 ### Beer rationalizing
 To extract the rationales using our model, follow the steps below
