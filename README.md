@@ -90,7 +90,7 @@ all codes needed for reproduce our experiment is provided in software/
 * make_data.sh
     * run to preprocces data for training and testing
 * _run_train.sh
-    * run to trained ou
+    * run to train our model
 * _run_beer_reason.sh
     * shell script for beer rationale prediction, and evaluate the IOU F1 and Token F1 scores
 * _run_movie_reason.sh
